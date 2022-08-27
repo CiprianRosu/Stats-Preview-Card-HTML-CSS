@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#0A0C1B;
+}
+.wrapper{
+    background-color: #1C1938;
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 1150px;
+    height: 446px;
+    display: flex; 
+    justify-content: space-between;
+    border-radius: 9px 9px 9px 9px;
+    
+}
+ .wrapper img{
+
+opacity: .5;
+object-fit: cover;
+border-radius:0px 9px 9px 0px;
+
+}
+
+.layer {
+background-color: rgb(103, 43, 146);
+height: 446px;
+border-radius:0px 9px 9px 0px;
+
+
+}
+
+.elements{
+    
+     width:450px;
+     margin:80px; 
+} 
+.elements h1{
+    font-size: 35px;
+    color: white;
+     font-family: 'Inter', sans-serif; 
+}
+.elements h1 span {
+
+    color:rgb(128, 58, 179);
+
+}
+.elements p {
+    padding-top: 25px;
+    font-size: 15px;
+ font-family: 'Lexend Deca', sans-serif;  
+    color: rgb(146, 145, 145);
+}
+.text{
+    width: 375px;
+    line-height: 1.6;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    width:330px;
+    padding-top: 80px;
+    text-transform: uppercase;
+}
+.stats p {
+    padding:0px;
+    /* margin-top: 50px; */
+    /* font-size: 15px; */
+}
+.stats div span p {
+    color:white;
+    font-size: 25px;
+    padding-bottom:8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold; 
+}
+.stats div p {
+    font-size: 13px;
+    
+}
+
+@media screen and (max-width: 600px){
+    .wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 375px;
+        height: 960px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+  
+    .wrapper img{
+
+        opacity: .5;
+        object-fit: cover;
+        border-radius:9px 9px 0px 0px;
+        width:375px;
+        height: 300px;
+        
+        }
+        
+        .layer {
+        background-color: rgb(103, 43, 146);
+        width:375;
+        height: 300px;
+        border-radius:9px 9px 0px 0px;
+        
+        }
+        .elements{
+    
+        width:375px;
+        height: 660px;
+        margin:80px; 
+        margin:0 auto;
+
+       } 
+       .elements h1{
+        width:325px;
+        margin: 0 auto;
+        padding-top: 50px;
+        text-align: center;
+       }
+       
+       .text{
+        width:280px;
+        margin: 0 auto;
+        text-align: center;
+       }
+       .stats{
+        flex-direction: column;
+        width: 150px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 50px;
+        
+       }
+       .stats div {
+        padding-bottom :35px; 
+        
+       }
+    }
